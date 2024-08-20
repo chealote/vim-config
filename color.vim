@@ -13,7 +13,7 @@ hi Search ctermbg=darkyellow ctermfg=black
 hi CurSearch ctermbg=magenta ctermfg=black
 hi Comment ctermfg=gray
 
-hi SpellBad ctermbg=lightred
-hi SpellCap ctermbg=lightgray
-hi SpellRare ctermbg=cyan
+hi SpellBad ctermbg=52 ctermfg=9
+hi SpellCap ctermbg=24 ctermfg=6
+hi SpellRare ctermbg=24 ctermfg=6
 hi SpellLocal ctermbg=magenta
