@@ -17,3 +17,4 @@ hi SpellBad ctermbg=52 ctermfg=9
 hi SpellCap ctermbg=24 ctermfg=6
 hi SpellRare ctermbg=24 ctermfg=6
 hi SpellLocal ctermbg=magenta
+hi SpecialKey ctermfg=240

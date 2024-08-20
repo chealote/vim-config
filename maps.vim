@@ -6,13 +6,13 @@ inoremap <c-w> <nop>
 " also in command line
 cnoremap <esc><bs> <c-w>
 cnoremap <c-w> <nop>
-nnoremap <leader>v :tab new $RTP/vimrc<cr>
+nnoremap <leader>v :e $RTP/vimrc<cr>
 nnoremap <leader>V :source $RTP/vimrc<cr>
 nnoremap <leader>e :call OpenCurrentDir('new')<cr>
 nnoremap <leader>E :call OpenCurrentDir('vnew')<cr>
 nnoremap <c-n> :tab new<cr>
 
-function OpenCurrentDir(split)
+function! OpenCurrentDir(split)
   let file = expand('%:h')
   if file == ""
     :e .
@@ -31,7 +31,6 @@ nnoremap <a-right> :tabnext<cr>
 " set grepprg=grep\ -rIin\ --exclude-dir={.git,node_modules,venv,.next,.angular,.nx,dist}\ -E
 set grepprg=rg\ --vimgrep\ -i
 function! GrepWrapper(grepping)
-  execute "tab new"
   execute "silent grep '" . a:grepping . "'"
   execute "redraw!"
   execute "cw"
@@ -44,4 +43,9 @@ command! GrepTodos :cex system('grep -rIin --exclude-dir={.git,node_modules,venv
 nnoremap <leader>t :GrepTodos<cr>
 
 nnoremap <leader>G yiw:Grep 0
+vnoremap <leader>g y:Grep 0
+
+nnoremap <a->> :bn<cr>
+nnoremap <a-<> :bp<cr>
+nnoremap <a-D> :bd<cr>
 
