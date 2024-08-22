@@ -8,8 +8,8 @@ cnoremap <esc><bs> <c-w>
 cnoremap <c-w> <nop>
 nnoremap <leader>v :e $RTP/vimrc<cr>
 nnoremap <leader>V :source $RTP/vimrc<cr>
-nnoremap <leader>e :call OpenCurrentDir('new')<cr>
-nnoremap <leader>E :call OpenCurrentDir('vnew')<cr>
+nnoremap <leader>e :e =expand('%:h')<cr>/
+nnoremap <leader>E :call OpenCurrentDir('new')<cr>
 nnoremap <c-n> :tab new<cr>
 
 function! OpenCurrentDir(split)
