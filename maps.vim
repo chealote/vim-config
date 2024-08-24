@@ -9,7 +9,7 @@ cnoremap <c-w> <nop>
 nnoremap <leader>v :e $RTP/vimrc<cr>
 nnoremap <leader>V :source $RTP/vimrc<cr>
 nnoremap <leader>e :e =expand('%:h')<cr>/
-nnoremap <leader>E :call OpenCurrentDir('new')<cr>
+nnoremap <leader>E :call OpenCurrentDir('e')<cr>
 nnoremap <c-n> :tab new<cr>
 
 function! OpenCurrentDir(split)
@@ -45,7 +45,6 @@ nnoremap <leader>t :GrepTodos<cr>
 nnoremap <leader>G yiw:Grep 0
 vnoremap <leader>g y:Grep 0
 
-nnoremap <a->> :bn<cr>
-nnoremap <a-<> :bp<cr>
-nnoremap <a-D> :bd<cr>
-
+nnoremap <esc>> :bn<cr>
+nnoremap <esc>< :bp<cr>
+nnoremap <esc>D :bd<cr>

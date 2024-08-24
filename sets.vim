@@ -13,12 +13,3 @@ set listchars=trail:-,lead:.,tab:>\
 set list
 set nowrap
 set showcmd
-
-" fast escape
-set ttimeoutlen=10
-augroup FastEscape
-	autocmd!
-	au InsertEnter * set timeoutlen=0
-	au InsertLeave * set timeoutlen=1000
-augroup END
-

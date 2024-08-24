@@ -18,3 +18,5 @@ hi SpellCap ctermbg=24 ctermfg=6
 hi SpellRare ctermbg=24 ctermfg=6
 hi SpellLocal ctermbg=magenta
 hi SpecialKey ctermfg=240
+hi CursorLine ctermbg=236 ctermfg=NONE cterm=NONE
+hi CursorLineNr ctermbg=236 ctermfg=246 cterm=NONE
