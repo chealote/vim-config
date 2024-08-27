@@ -13,3 +13,6 @@ set listchars=trail:-,lead:.,tab:>\
 set list
 set nowrap
 set showcmd
+set smartindent
+set hidden " change buffer without saving
+set spellsuggest=5

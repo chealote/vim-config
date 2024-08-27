@@ -42,9 +42,18 @@ nnoremap <leader>g :Grep
 command! GrepTodos :cex system('grep -rIin --exclude-dir={.git,node_modules,venv,.next,.angular,.nx,dist} -E "(TODO|FIXME)"')
 nnoremap <leader>t :GrepTodos<cr>
 
-nnoremap <leader>G yiw:Grep 0
+nnoremap <leader>G yiw:Grep \b0\b
 vnoremap <leader>g y:Grep 0
 
 nnoremap <esc>> :bn<cr>
 nnoremap <esc>< :bp<cr>
 nnoremap <esc>D :bd<cr>
+
+" fast escape
+set ttimeoutlen=10
+augroup FastEscape
+  autocmd!
+  au InsertEnter * set timeoutlen=0
+  au InsertLeave * set timeoutlen=1000
+augroup END
+
