@@ -1,2 +1,2 @@
 colorscheme mono
-setlocal background=dark
+setlocal background=light
