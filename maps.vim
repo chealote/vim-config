@@ -22,7 +22,6 @@ function! OpenCurrentDir(split)
 endfunction
 
 " plugins mappings
-nnoremap <leader>p :FZF --color=light<cr>
 nnoremap <leader>lb :Buffers<cr>
 nnoremap <a-left> :tabprevious<cr>
 nnoremap <a-right> :tabnext<cr>

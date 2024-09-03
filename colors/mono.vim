@@ -365,35 +365,35 @@ if s:t_Co >= 256
     finish
   endif
   " Light background
-  hi Normal ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Normal ctermfg=NONE ctermbg=255 cterm=NONE
   hi Terminal ctermfg=232 ctermbg=188 cterm=NONE
   hi ColorColumn ctermfg=NONE ctermbg=255 cterm=NONE
   hi Conceal ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Cursor ctermfg=NONE ctermbg=NONE cterm=reverse
   hi CursorColumn ctermfg=NONE ctermbg=255 cterm=NONE
-  hi CursorLine ctermfg=NONE ctermbg=252 cterm=NONE
-  hi CursorLineNr ctermfg=240 ctermbg=NONE cterm=bold
+  hi CursorLine ctermfg=NONE ctermbg=254 cterm=NONE
+  hi CursorLineNr ctermfg=240 ctermbg=253 cterm=bold
   hi DiffAdd ctermfg=22 ctermbg=120 cterm=NONE
   hi DiffChange ctermfg=25 ctermbg=152 cterm=NONE
   hi DiffDelete ctermfg=52 ctermbg=210 cterm=NONE
   hi DiffText ctermfg=176 ctermbg=188 cterm=NONE
-  hi Directory ctermfg=232 ctermbg=188 cterm=NONE
+  hi Directory ctermfg=25 ctermbg=NONE cterm=bold
   hi EndOfBuffer ctermfg=245 ctermbg=NONE cterm=NONE
   hi ErrorMsg ctermfg=88 ctermbg=white cterm=reverse
   hi FoldColumn ctermfg=59 ctermbg=188 cterm=NONE
   hi Folded ctermfg=59 ctermbg=188 cterm=italic
   hi IncSearch ctermfg=13 ctermbg=255 cterm=reverse
-  hi LineNr ctermfg=247 ctermbg=188 cterm=NONE
-  hi MatchParen ctermfg=199 ctermbg=188 cterm=bold
+  hi LineNr ctermfg=247 ctermbg=253 cterm=NONE
+  hi MatchParen ctermfg=235 ctermbg=110 cterm=underline,bold
   hi ModeMsg ctermfg=232 ctermbg=188 cterm=bold
   hi MoreMsg ctermfg=232 ctermbg=188 cterm=NONE
   hi NonText ctermfg=250 ctermbg=NONE cterm=NONE
-  hi Pmenu ctermfg=232 ctermbg=146 cterm=NONE
-  hi PmenuSbar ctermfg=232 ctermbg=59 cterm=NONE
-  hi PmenuSel ctermfg=232 ctermbg=176 cterm=NONE
-  hi PmenuThumb ctermfg=232 ctermbg=176 cterm=NONE
+  hi Pmenu ctermfg=232 ctermbg=250 cterm=NONE
+  hi PmenuSbar ctermfg=232 ctermbg=245 cterm=NONE
+  hi PmenuSel ctermfg=232 ctermbg=110 cterm=NONE
+  hi PmenuThumb ctermfg=232 ctermbg=240 cterm=NONE
   hi Question ctermfg=232 ctermbg=188 cterm=NONE
-  hi Search ctermfg=74 ctermbg=235 cterm=reverse
+  hi Search ctermfg=black ctermbg=110 cterm=NONE
   hi SignColumn ctermfg=232 ctermbg=188 cterm=NONE
   hi SpecialKey ctermfg=250 ctermbg=NONE cterm=NONE
   hi SpellBad ctermfg=199 ctermbg=188 cterm=underline
@@ -401,24 +401,24 @@ if s:t_Co >= 256
   hi SpellLocal ctermfg=129 ctermbg=188 cterm=underline
   hi SpellRare ctermfg=49 ctermbg=188 cterm=underline
   hi StatusLine ctermfg=240 ctermbg=250 cterm=bold
-  hi StatusLineNC ctermfg=248 ctermbg=250 cterm=NONE
-  hi String ctermfg=25 ctermbg=NONE cterm=NONE
-  hi TabLine ctermfg=232 ctermbg=255 cterm=NONE
-  hi TabLineFill ctermfg=232 ctermbg=255 cterm=NONE
-  hi TabLineSel ctermfg=255 ctermbg=NONE cterm=bold
+  hi StatusLineNC ctermfg=248 ctermbg=253 cterm=NONE
+  hi String ctermfg=24 ctermbg=NONE cterm=NONE
+  hi TabLine ctermfg=245 ctermbg=253 cterm=NONE
+  hi TabLineFill ctermfg=245 ctermbg=NONE cterm=NONE
+  hi TabLineSel ctermfg=242 ctermbg=254 cterm=bold
   hi Title ctermfg=232 ctermbg=188 cterm=NONE
   hi VertSplit ctermfg=59 ctermbg=188 cterm=NONE
-  hi Visual ctermfg=255 ctermbg=19 cterm=NONE
+  hi Visual ctermfg=0 ctermbg=248 cterm=NONE
   hi VisualNOS ctermfg=NONE ctermbg=255 cterm=NONE
   hi WarningMsg ctermfg=232 ctermbg=188 cterm=NONE
   hi WildMenu ctermfg=232 ctermbg=255 cterm=bold
-  hi Comment ctermfg=232 ctermbg=NONE cterm=bold
+  hi Comment ctermfg=248 ctermbg=NONE cterm=bold
   hi Constant ctermfg=232 ctermbg=NONE cterm=NONE
   hi Error ctermfg=88 ctermbg=255 cterm=reverse
   hi Identifier ctermfg=232 ctermbg=NONE cterm=NONE
   hi Ignore ctermfg=232 ctermbg=NONE cterm=NONE
   hi PreProc ctermfg=232 ctermbg=NONE cterm=NONE
-  hi Special ctermfg=125 ctermbg=NONE cterm=NONE
+  hi Special ctermfg=24 ctermbg=NONE cterm=NONE
   hi Statement ctermfg=232 ctermbg=NONE cterm=NONE
   hi Todo ctermfg=49 ctermbg=NONE cterm=bold,reverse
   hi Type ctermfg=232 ctermbg=NONE cterm=NONE
@@ -453,10 +453,10 @@ if s:t_Co >= 256
   hi rstStandAloneHyperlink ctermfg=25 ctermbg=NONE cterm=NONE
   hi rstHyperlinktarget ctermfg=25 ctermbg=NONE cterm=NONE
   hi rstCitationReference ctermfg=91 ctermbg=NONE cterm=NONE
-  hi diffFile ctermfg=232 ctermbg=NONE cterm=bold
-  hi diffAdded ctermfg=10 ctermbg=22 cterm=NONE
-  hi diffRemoved ctermbg=52 ctermfg=9 cterm=NONE
-  hi diffLine ctermfg=232 ctermbg=146 cterm=NONE
+  hi diffFile ctermfg=25 ctermbg=152 cterm=NONE
+  hi diffAdded ctermfg=22 ctermbg=120 cterm=NONE
+  hi diffRemoved ctermfg=52 ctermbg=210 cterm=NONE
+  hi diffLine ctermfg=176 ctermbg=188 cterm=NONE
   if !s:italics
     hi Folded cterm=NONE
     hi markdownItalic cterm=NONE
