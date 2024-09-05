@@ -379,7 +379,7 @@ if s:t_Co >= 256
   hi DiffText ctermfg=176 ctermbg=188 cterm=NONE
   hi Directory ctermfg=25 ctermbg=NONE cterm=bold
   hi EndOfBuffer ctermfg=245 ctermbg=NONE cterm=NONE
-  hi ErrorMsg ctermfg=88 ctermbg=white cterm=reverse
+  hi ErrorMsg ctermfg=88 ctermbg=255 cterm=reverse
   hi FoldColumn ctermfg=59 ctermbg=188 cterm=NONE
   hi Folded ctermfg=59 ctermbg=188 cterm=italic
   hi IncSearch ctermfg=13 ctermbg=255 cterm=reverse
@@ -412,7 +412,7 @@ if s:t_Co >= 256
   hi VisualNOS ctermfg=NONE ctermbg=255 cterm=NONE
   hi WarningMsg ctermfg=232 ctermbg=188 cterm=NONE
   hi WildMenu ctermfg=232 ctermbg=255 cterm=bold
-  hi Comment ctermfg=248 ctermbg=NONE cterm=bold
+  hi Comment ctermfg=28 ctermbg=NONE cterm=NONE
   hi Constant ctermfg=232 ctermbg=NONE cterm=NONE
   hi Error ctermfg=88 ctermbg=255 cterm=reverse
   hi Identifier ctermfg=232 ctermbg=NONE cterm=NONE

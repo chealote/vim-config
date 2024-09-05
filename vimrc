@@ -7,3 +7,4 @@ filetype plugin on
 source $RTP/color.vim
 source $RTP/sets.vim
 source $RTP/maps.vim
+source $RTP/plug.vim
