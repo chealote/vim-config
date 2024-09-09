@@ -1,3 +1,4 @@
+" SETS:
 set ignorecase
 set spelllang=en_us,es
 set mouse=
@@ -17,3 +18,6 @@ set smartindent
 set hidden " change buffer without saving
 set spellsuggest=5
 set cursorline
+
+" LETS:
+let g:netrw_banner=0
