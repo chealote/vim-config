@@ -6,4 +6,6 @@ Plug 'mhinz/vim-signify'
 
 call plug#end()
 
-nnoremap <leader>p :FZF --color=light<cr>
+" replacing these with :find and :ls for now
+" nnoremap <leader>p :FZF --color=light<cr>
+" nnoremap <leader>b :Buffers<cr>

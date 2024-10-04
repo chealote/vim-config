@@ -21,11 +21,6 @@ function! OpenCurrentDir(split)
   endif
 endfunction
 
-" plugins mappings
-nnoremap <leader>lb :Buffers<cr>
-nnoremap <a-left> :tabprevious<cr>
-nnoremap <a-right> :tabnext<cr>
-
 " grepping
 " set grepprg=grep\ -rIin\ --exclude-dir={.git,node_modules,venv,.next,.angular,.nx,dist}\ -E
 set grepprg=rg\ --vimgrep\ -i
@@ -44,6 +39,9 @@ nnoremap <leader>t :GrepTodos<cr>
 nnoremap <leader>G yiw:Grep \b0\b
 vnoremap <leader>g y:Grep 0
 
+nnoremap <leader>p :find <tab>
+
+nnoremap <leader>b :ls<cr>:b 
 nnoremap <esc>> :bn<cr>
 nnoremap <esc>< :bp<cr>
 nnoremap <esc>D :bd<cr>
@@ -55,4 +53,3 @@ augroup FastEscape
   au InsertEnter * set timeoutlen=0
   au InsertLeave * set timeoutlen=1000
 augroup END
-

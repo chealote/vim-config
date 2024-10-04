@@ -15,9 +15,10 @@ set list
 set nowrap
 set showcmd
 set smartindent
-set hidden " change buffer without saving
+set hidden
 set spellsuggest=5
 set cursorline
+set wildcharm=<tab>
 
 " LETS:
 let g:netrw_banner=0

@@ -258,67 +258,65 @@ endif
 
 if s:t_Co >= 256
   if &background ==# 'dark'
-    hi Normal ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Terminal ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Normal ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Terminal ctermfg=254 ctermbg=234 cterm=NONE
+    hi Normal ctermfg=254 ctermbg=234 cterm=NONE
     if !has('patch-8.0.0616') " Fix for Vim bug
       set background=dark
     endif
-    hi Terminal ctermfg=NONE ctermbg=NONE cterm=NONE
     hi ColorColumn ctermfg=NONE ctermbg=52 cterm=NONE
     hi Conceal ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Cursor ctermfg=NONE ctermbg=NONE cterm=reverse
     hi CursorColumn ctermfg=NONE ctermbg=236 cterm=NONE
     hi CursorLine ctermfg=NONE ctermbg=236 cterm=NONE
-    hi CursorLineNr ctermfg=244 ctermbg=NONE cterm=bold
+    hi CursorLineNr ctermfg=244 ctermbg=234 cterm=bold
     hi DiffAdd ctermfg=10 ctermbg=22 cterm=NONE
     hi DiffChange ctermfg=6 ctermbg=31 cterm=NONE
     hi DiffDelete ctermfg=1 ctermbg=52 cterm=NONE
     hi DiffText ctermfg=176 ctermbg=NONE cterm=reverse
-    hi Directory ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Directory ctermfg=30 ctermbg=NONE cterm=NONE
     hi EndOfBuffer ctermfg=240 ctermbg=NONE cterm=NONE
-    hi ErrorMsg ctermfg=NONE ctermbg=NONE cterm=reverse
+    hi ErrorMsg ctermfg=196 ctermbg=255 cterm=bold,reverse
     hi FoldColumn ctermfg=242 ctermbg=NONE cterm=NONE
     hi Folded ctermfg=242 ctermbg=NONE cterm=italic
     hi IncSearch ctermfg=0 ctermbg=13 cterm=NONE
-    hi LineNr ctermfg=238 ctermbg=NONE cterm=NONE
+    hi LineNr ctermfg=238 ctermbg=234 cterm=NONE
     hi MatchParen ctermfg=NONE ctermbg=NONE cterm=reverse
     hi ModeMsg ctermfg=NONE ctermbg=NONE cterm=bold
     hi MoreMsg ctermfg=NONE ctermbg=NONE cterm=NONE
     hi NonText ctermfg=242 ctermbg=NONE cterm=NONE
     hi Pmenu ctermfg=NONE ctermbg=236 cterm=NONE
     hi PmenuSbar ctermfg=NONE ctermbg=234 cterm=NONE
-    hi PmenuSel ctermfg=236 ctermbg=184 cterm=NONE
+    hi PmenuSel ctermfg=236 ctermbg=185 cterm=NONE
     hi PmenuThumb ctermfg=NONE ctermbg=245 cterm=NONE
     hi Question ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Search ctermfg=74 ctermbg=0 cterm=reverse
+    hi Search ctermfg=185 ctermbg=0 cterm=reverse
     hi SignColumn ctermfg=NONE ctermbg=NONE cterm=NONE
     hi SpecialKey ctermfg=240 ctermbg=NONE cterm=NONE
     hi SpellBad ctermfg=NONE ctermbg=52 cterm=underline
     hi SpellCap ctermfg=NONE ctermbg=54 cterm=underline
     hi SpellLocal ctermfg=NONE ctermbg=54 cterm=underline
     hi SpellRare ctermfg=NONE ctermbg=54 cterm=underline
-    hi StatusLine ctermfg=NONE ctermbg=236 cterm=bold
-    hi StatusLineNC ctermfg=242 ctermbg=NONE cterm=underline
-    hi String ctermfg=74 ctermbg=NONE cterm=NONE
-    hi TabLine ctermfg=NONE ctermbg=236 cterm=NONE
-    hi TabLineFill ctermfg=NONE ctermbg=236 cterm=NONE
-    hi TabLineSel ctermfg=NONE ctermbg=NONE cterm=bold
+    hi StatusLine ctermbg=NONE ctermfg=245 cterm=bold,underline
+    hi StatusLineNC ctermfg=242 ctermbg=234 cterm=underline
+    hi String ctermfg=71 ctermbg=NONE cterm=NONE
+    hi TabLine ctermfg=238 ctermbg=234 cterm=NONE
+    hi TabLineFill ctermfg=238 ctermbg=234 cterm=NONE
+    hi TabLineSel ctermfg=254 ctermbg=236 cterm=bold
     hi Title ctermfg=NONE ctermbg=NONE cterm=NONE
     hi VertSplit ctermfg=242 ctermbg=NONE cterm=NONE
-    hi Visual ctermfg=255 ctermbg=240 cterm=NONE
+    hi Visual ctermfg=255 ctermbg=238 cterm=NONE
     hi VisualNOS ctermfg=NONE ctermbg=236 cterm=NONE
     hi WarningMsg ctermfg=NONE ctermbg=NONE cterm=NONE
     hi WildMenu ctermfg=39 ctermbg=236 cterm=bold
-    hi Comment ctermfg=242 ctermbg=NONE cterm=bold
+    hi Comment ctermfg=245 ctermbg=NONE cterm=NONE
     hi Constant ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Error ctermfg=196 ctermbg=255 cterm=bold,reverse
     hi Identifier ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Ignore ctermfg=NONE ctermbg=NONE cterm=NONE
     hi PreProc ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Special ctermfg=74 ctermbg=NONE cterm=NONE
-    hi Statement ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Todo ctermfg=49 ctermbg=NONE cterm=bold,reverse
+    hi Special ctermfg=185 ctermbg=NONE cterm=NONE
+    hi Statement ctermfg=185 ctermbg=NONE cterm=NONE
+    hi Todo ctermfg=30 ctermbg=NONE cterm=bold,reverse
     hi Type ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline
     hi CursorIM ctermfg=232 ctermbg=154 cterm=NONE
@@ -333,7 +331,7 @@ if s:t_Co >= 256
     hi markdownLinkTextDelimiter ctermfg=NONE ctermbg=NONE cterm=NONE
     hi markdownLinkDelimiter ctermfg=NONE ctermbg=NONE cterm=NONE
     hi markdownListMarker ctermfg=NONE ctermbg=NONE cterm=bold
-    hi markdownLinkText ctermfg=74 ctermbg=NONE cterm=NONE
+    hi markdownLinkText ctermfg=185 ctermbg=NONE cterm=NONE
     hi markdownUrl ctermfg=242 ctermbg=NONE cterm=NONE
     hi markdownRule ctermfg=NONE ctermbg=NONE cterm=bold
     hi markdownId ctermfg=140 ctermbg=NONE cterm=NONE
@@ -348,8 +346,8 @@ if s:t_Co >= 256
     hi rstEmphasis ctermfg=NONE ctermbg=NONE cterm=italic
     hi rstStrongEmphasis ctermfg=NONE ctermbg=NONE cterm=bold
     hi rstInterpretedTextOrHyperlinkReference ctermfg=140 ctermbg=NONE cterm=NONE
-    hi rstStandAloneHyperlink ctermfg=74 ctermbg=NONE cterm=NONE
-    hi rstHyperlinktarget ctermfg=74 ctermbg=NONE cterm=NONE
+    hi rstStandAloneHyperlink ctermfg=185 ctermbg=NONE cterm=NONE
+    hi rstHyperlinktarget ctermfg=185 ctermbg=NONE cterm=NONE
     hi rstCitationReference ctermfg=140 ctermbg=NONE cterm=NONE
     hi diffFile ctermfg=67 ctermbg=NONE cterm=NONE
     hi diffAdded ctermfg=36 ctermbg=NONE cterm=NONE
@@ -365,26 +363,26 @@ if s:t_Co >= 256
     finish
   endif
   " Light background
-  hi Normal ctermfg=NONE ctermbg=255 cterm=NONE
+  hi Normal ctermfg=black ctermbg=255 cterm=NONE
   hi Terminal ctermfg=232 ctermbg=188 cterm=NONE
-  hi ColorColumn ctermfg=NONE ctermbg=255 cterm=NONE
+  hi ColorColumn ctermfg=NONE ctermbg=28 cterm=NONE
   hi Conceal ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi Cursor ctermfg=NONE ctermbg=NONE cterm=reverse
-  hi CursorColumn ctermfg=NONE ctermbg=255 cterm=NONE
+  hi Cursor ctermfg=13 ctermbg=255 cterm=NONE
+  hi CursorColumn ctermfg=NONE ctermbg=NONE cterm=NONE
   hi CursorLine ctermfg=NONE ctermbg=254 cterm=NONE
   hi CursorLineNr ctermfg=240 ctermbg=253 cterm=bold
   hi DiffAdd ctermfg=22 ctermbg=120 cterm=NONE
   hi DiffChange ctermfg=25 ctermbg=152 cterm=NONE
   hi DiffDelete ctermfg=52 ctermbg=210 cterm=NONE
   hi DiffText ctermfg=176 ctermbg=188 cterm=NONE
-  hi Directory ctermfg=25 ctermbg=NONE cterm=bold
-  hi EndOfBuffer ctermfg=245 ctermbg=NONE cterm=NONE
+  hi Directory ctermfg=24 ctermbg=NONE cterm=bold
+  hi EndOfBuffer ctermfg=245 ctermbg=253 cterm=NONE
   hi ErrorMsg ctermfg=88 ctermbg=255 cterm=reverse
   hi FoldColumn ctermfg=59 ctermbg=188 cterm=NONE
   hi Folded ctermfg=59 ctermbg=188 cterm=italic
   hi IncSearch ctermfg=13 ctermbg=255 cterm=reverse
   hi LineNr ctermfg=247 ctermbg=253 cterm=NONE
-  hi MatchParen ctermfg=235 ctermbg=110 cterm=underline,bold
+  hi MatchParen ctermfg=255 ctermbg=24 cterm=underline,bold
   hi ModeMsg ctermfg=232 ctermbg=188 cterm=bold
   hi MoreMsg ctermfg=232 ctermbg=188 cterm=NONE
   hi NonText ctermfg=250 ctermbg=NONE cterm=NONE
@@ -420,7 +418,7 @@ if s:t_Co >= 256
   hi PreProc ctermfg=232 ctermbg=NONE cterm=NONE
   hi Special ctermfg=24 ctermbg=NONE cterm=NONE
   hi Statement ctermfg=232 ctermbg=NONE cterm=NONE
-  hi Todo ctermfg=49 ctermbg=NONE cterm=bold,reverse
+  hi Todo ctermfg=28 ctermbg=NONE cterm=bold,reverse
   hi Type ctermfg=232 ctermbg=NONE cterm=NONE
   hi Underlined ctermfg=232 ctermbg=NONE cterm=underline
   hi CursorIM ctermfg=232 ctermbg=154 cterm=NONE
