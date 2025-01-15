@@ -1,4 +1,6 @@
 " delete with alt+backspace (meta+backspace)
+" I was pressing ctrl-w everywhere thanks to vim, even in browsers, closing
+" tabs instead of deleting the last word
 " alt+backspace sends two keys to terminal, escape and then BS
 inoremap <esc><bs> <c-w>
 " this doesn't work: inoremap <m-bs> <c-w>
@@ -21,9 +23,12 @@ function! OpenCurrentDir(split)
   endif
 endfunction
 
-" grepping
-" set grepprg=grep\ -rIin\ --exclude-dir={.git,node_modules,venv,.next,.angular,.nx,dist}\ -E
-set grepprg=rg\ --vimgrep\ -i
+if executable('rg')
+  set grepprg=rg\ --vimgrep\ -i
+else
+  set grepprg=grep\ -rIin\ --exclude-dir={.git,node_modules,venv,.next,.angular,.nx,dist}\ -E
+endif
+
 function! GrepWrapper(grepping)
   execute "silent grep '" . a:grepping . "'"
   execute "redraw!"
